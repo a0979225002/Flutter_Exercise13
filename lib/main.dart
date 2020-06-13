@@ -21,7 +21,6 @@ class MyApp extends StatelessWidget {
 //        'search':(context)=>SearchPage(),
 //        //需在要跳轉的頁面 Navigator.pushNamed(context,'/search');
 //      },
-
         initialRoute: '/tabs', //初始化家載的頁面
         onGenerateRoute: onGenerateRoute,//不需加()
     );

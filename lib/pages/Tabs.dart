@@ -4,18 +4,31 @@ import 'tabs/HomePage.dart';
 import 'tabs/SettingPage.dart';
 
 class TabPage extends StatefulWidget {
+
+  final int count;
+
+  TabPage({this.count = 0});
+
+
   @override
-  _State createState() => _State();
+  _State createState() => _State(count);
 }
 
 class _State extends State<TabPage> {
-  int countNum = 0;
+
+   int countNum;
+  _State(int count){
+    this.countNum = count;
+  }
+
+
   List list = [
     HomePage(),
     CategoryPage(),
     SettingPage(),
     SettingPage()
   ];
+
 
   @override
   Widget build(BuildContext context) {

@@ -4,6 +4,13 @@ import 'package:flutter/material.dart';
 import '../Tabs.dart';
 import '../product.dart';
 import '../product_info.dart';
+import 'package:flutterroutes/user/login.dart';
+import 'package:flutterroutes/user/register_first.dart';
+import 'package:flutterroutes/user/register_second.dart';
+import 'package:flutterroutes/user/registerThird.dart';
+
+
+
 
 final routes = {
   '/tabs':(context,{arguments})=>TabPage(),//首個加載頁面
@@ -11,6 +18,11 @@ final routes = {
   '/form':(context,{arguments})=>FormPage(arguments: arguments,),
   '/search':(context,{arguments})=>SearchPage(arguments: arguments,),
   '/product_info':(context,{arguments})=>ProductInfoPage(arguments: arguments,),
+  '/login':(context)=>Login(),
+  '/registerFirst':(context)=>RegisterFirst(),
+  '/registerSecond':(context)=>RegisterSecond(),
+  '/registerThird':(context)=>RegisterThird(),
+
 };
 
 
